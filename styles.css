@@ -1,0 +1,112 @@
+p.text {
+    color:rgba(0, 54, 61, 0.048);
+}
+
+.Bk {
+    background-color: blue;
+    margin: 0px;
+}
+p.bam{
+    background-color:yellow;
+}
+
+img.resizeW{
+    width: 500px;
+    height: 250px;
+    object-fit: fill;
+}
+img.resizeH {
+    width: 250px;
+    height: 500px;
+    object-fit: fill;
+    margin: 0
+}
+.EdT {
+    background-color: violet;
+}
+.BkP{   /*Задний фон poragraf*/
+    background-color:aqua;
+    border: 1cm dashed;
+    padding: 50px;  /*пробел в параграфе(свободное пространство) */
+    /* свободное пространсво у параграфов  */
+    padding-left: 0px;
+} 
+
+
+.Svetof_Red{
+    background-color: red;
+    height: 50px;
+    
+}
+.Svetof_Yellow{
+    background-color: yellow;
+    height: 50px;
+}
+.Svetof_Green{
+    background-color: lawngreen;
+    height: 50px;    
+}
+th {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    background-color: rgb(100 100 100);
+}
+td {
+  border: 1px solid rgb(255 255 255);
+  padding: 8px 10px;
+  background-color: gray;
+}
+table {
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+.b {
+    background-color: beige;
+    padding: 10px;
+}
+.RightToLeft {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    color: aliceblue;
+}
+.BackGroundColorCoppy { /* Для не нумерованных*/
+    background-color: blueviolet;
+    padding: 20px;
+    list-style-type: circle;
+}
+.BackGroundColor {  /* Для нумерованных */
+    background-color: blueviolet;
+    padding: 20px;
+    /* list-style-type: disc ; */
+    /* list-style-position: outside; */
+}
+
+
+
+ol { 
+    counter-reset: item
+}
+li{
+    display: block 
+    
+} */
+ li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item 
+    
+}
+
+/* .img_list {
+    list-style-image: url('image/Безымянный.png')
+    /* background-color: blueviolet; */
+/* }  */
+
+ol { 
+    list-style-type: none; /*Отключение стандартного счетчека*/
+    counter-reset: num 5;
+}
+ol.List_buy li::before {
+    content: counter(num) ") ";
+    counter-increment: num 2;
+    padding: 0px;
+}
