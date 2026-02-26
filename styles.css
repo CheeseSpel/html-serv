@@ -110,3 +110,8 @@ ol.List_buy li::before {
     counter-increment: num 2;
     padding: 0px;
 }
+
+.opti_img {
+    width: 600px;
+    height: 500;
+}
