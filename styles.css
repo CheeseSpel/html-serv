@@ -114,4 +114,10 @@ ol.List_buy li::before {
 .opti_img {
     width: 600px;
     height: 500;
+    float: right;
+    margin: 20px 20px 20px 20px;
+}
+
+.Bkpar {
+    background-color: aliceblue;
 }
